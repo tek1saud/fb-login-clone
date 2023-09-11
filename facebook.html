@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        body{
+            background-color: #f0f2f5;
+        }
+        .container{
+            margin: auto;
+            margin-top: 70px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            margin-left: -200px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: white;
+            width: 88%;
+            height:fit-content;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        form input {
+  width: 86%;
+  padding: 16px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+  margin-top: 13px;
+}
+form input::placeholder{
+    font-size: 17px;
+    color: rgb(167, 167, 167);
+    font-weight: 400;
+
+}
+form input:focus:not(form input[type="submit"]) {
+  border: 1px solid #1473ef;
+  box-shadow: 0px 0px 2px #1473ef;
+}
+a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: #1473ef;
+   
+    position: relative;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    background-color: #42b72a;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    
+
+}
+.new p{
+    font-size: 18px;
+    color: white;
+
+}
+form .new:hover {
+  background-color: #35a51e;
+  cursor: pointer;
+}
+.subm{
+    background-color: #1b4cfd;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.container form a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 15px;
+    margin-left: -80px;
+}
+
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="image"><img src="./Facebook-Logo.svg" width="200px"  height="" alt=""></div>
+        <form action="#" method="post">
+            <input class="email" type="email" placeholder="Email or Mobile" required> 
+            <input class="password"type="password" placeholder="password" required>
+            <input class="subm"type="submit" value="Log in">
+            <a href="#">Forgotten password</a>
+       
+      
+            <div class="new">
+                <p>Create new account</p>
+            </div>
+
+        </form>
+
+     </div>
+
+</body>
+</html>
